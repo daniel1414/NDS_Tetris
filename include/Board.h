@@ -20,12 +20,15 @@ class Board {
 	bool can_move(bool right) const;
 	bool check_overlap() const;
 	u8 erase_rows_if_needed();
+	void new_tile();
+	void game_over();
 public:
 	Board();
+	~Board();
 	void process_input(int keys_down, int keys_held);
-	void new_tile();
 	void fall_cur_tile();
 
+	bool alive = true;
 	static std::random_device rd;
 	static std::mt19937 mt;
 	static std::uniform_int_distribution<int> dist_tile;

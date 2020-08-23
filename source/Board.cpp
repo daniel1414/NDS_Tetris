@@ -152,6 +152,12 @@ Board::Board()
 	new_tile();
 }
 
+Board::~Board()
+{
+	bgHide(bg_);
+	bgHide(bg_sub_);
+}
+
 void Board::process_input(int keys_down, int keys_held)
 {
 	if (keys_down & KEY_LEFT) {
@@ -214,7 +220,13 @@ void Board::fall_cur_tile()
 		erase_rows_if_needed();
 		new_tile();
 		if (check_overlap()) { // he's dead
-			// new game or sth
+			game_over();
 		}
 	}
+}
+
+void Board::game_over()
+{
+	tetris_tiles_.clear();
+	alive = false;
 }

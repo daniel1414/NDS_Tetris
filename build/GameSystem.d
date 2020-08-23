@@ -1,4 +1,6 @@
-main.o: C\:/devkitPro/projects/tetris/source/main.cpp \
+GameSystem.o: C\:/devkitPro/projects/tetris/source/GameSystem.cpp \
+ C\:/devkitPro/projects/tetris/include/GameSystem.h \
+ C\:/devkitPro/projects/tetris/include/Board.h \
  C\:/devkitPro/libnds/include/nds.h \
  C\:/devkitPro/libnds/include/nds/libversion.h \
  C\:/devkitPro/libnds/include/nds/ndstypes.h \
@@ -59,12 +61,13 @@ main.o: C\:/devkitPro/projects/tetris/source/main.cpp \
  C\:/devkitPro/libnds/include/nds/arm9/video.h \
  C\:/devkitPro/libnds/include/nds/arm9/videoGL.h \
  C\:/devkitPro/libnds/include/nds/arm9/nand.h \
- C\:/devkitPro/projects/tetris/include/GameSystem.h \
- C\:/devkitPro/projects/tetris/include/Board.h \
  C\:/devkitPro/projects/tetris/include/TetrisTile.h \
  C\:/devkitPro/projects/tetris/include/Square.h \
  C\:/devkitPro/projects/tetris/include/Menu.h \
- C\:/devkitPro/projects/tetris/include/Cursor.h
+ C\:/devkitPro/projects/tetris/include/Cursor.h \
+ C\:/devkitPro/libnds/include/nds/timers.h
+C\:/devkitPro/projects/tetris/include/GameSystem.h:
+C\:/devkitPro/projects/tetris/include/Board.h:
 C\:/devkitPro/libnds/include/nds.h:
 C\:/devkitPro/libnds/include/nds/libversion.h:
 C\:/devkitPro/libnds/include/nds/ndstypes.h:
@@ -125,9 +128,8 @@ C\:/devkitPro/libnds/include/nds/arm9/trig_lut.h:
 C\:/devkitPro/libnds/include/nds/arm9/video.h:
 C\:/devkitPro/libnds/include/nds/arm9/videoGL.h:
 C\:/devkitPro/libnds/include/nds/arm9/nand.h:
-C\:/devkitPro/projects/tetris/include/GameSystem.h:
-C\:/devkitPro/projects/tetris/include/Board.h:
 C\:/devkitPro/projects/tetris/include/TetrisTile.h:
 C\:/devkitPro/projects/tetris/include/Square.h:
 C\:/devkitPro/projects/tetris/include/Menu.h:
 C\:/devkitPro/projects/tetris/include/Cursor.h:
+C\:/devkitPro/libnds/include/nds/timers.h:
