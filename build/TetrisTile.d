@@ -1,5 +1,5 @@
-TetrisTile.o: C\:/devkitPro/projects/tetris/source/TetrisTile.cpp \
- C\:/devkitPro/projects/tetris/include/TetrisTile.h \
+TetrisTile.o: C\:/devkitPro/Projects/Tetris/source/TetrisTile.cpp \
+ C\:/devkitPro/Projects/Tetris/include/TetrisTile.h \
  C\:/devkitPro/libnds/include/nds.h \
  C\:/devkitPro/libnds/include/nds/libversion.h \
  C\:/devkitPro/libnds/include/nds/ndstypes.h \
@@ -60,15 +60,15 @@ TetrisTile.o: C\:/devkitPro/projects/tetris/source/TetrisTile.cpp \
  C\:/devkitPro/libnds/include/nds/arm9/video.h \
  C\:/devkitPro/libnds/include/nds/arm9/videoGL.h \
  C\:/devkitPro/libnds/include/nds/arm9/nand.h \
- C\:/devkitPro/projects/tetris/include/Square.h \
- C\:/devkitPro/projects/tetris/build/i_square.h \
- C\:/devkitPro/projects/tetris/build/o_square.h \
- C\:/devkitPro/projects/tetris/build/j_square.h \
- C\:/devkitPro/projects/tetris/build/l_square.h \
- C\:/devkitPro/projects/tetris/build/s_square.h \
- C\:/devkitPro/projects/tetris/build/z_square.h \
- C\:/devkitPro/projects/tetris/build/t_square.h
-C\:/devkitPro/projects/tetris/include/TetrisTile.h:
+ C\:/devkitPro/Projects/Tetris/include/Square.h \
+ C\:/devkitPro/Projects/Tetris/build/i_square.h \
+ C\:/devkitPro/Projects/Tetris/build/o_square.h \
+ C\:/devkitPro/Projects/Tetris/build/j_square.h \
+ C\:/devkitPro/Projects/Tetris/build/l_square.h \
+ C\:/devkitPro/Projects/Tetris/build/s_square.h \
+ C\:/devkitPro/Projects/Tetris/build/z_square.h \
+ C\:/devkitPro/Projects/Tetris/build/t_square.h
+C\:/devkitPro/Projects/Tetris/include/TetrisTile.h:
 C\:/devkitPro/libnds/include/nds.h:
 C\:/devkitPro/libnds/include/nds/libversion.h:
 C\:/devkitPro/libnds/include/nds/ndstypes.h:
@@ -129,11 +129,11 @@ C\:/devkitPro/libnds/include/nds/arm9/trig_lut.h:
 C\:/devkitPro/libnds/include/nds/arm9/video.h:
 C\:/devkitPro/libnds/include/nds/arm9/videoGL.h:
 C\:/devkitPro/libnds/include/nds/arm9/nand.h:
-C\:/devkitPro/projects/tetris/include/Square.h:
-C\:/devkitPro/projects/tetris/build/i_square.h:
-C\:/devkitPro/projects/tetris/build/o_square.h:
-C\:/devkitPro/projects/tetris/build/j_square.h:
-C\:/devkitPro/projects/tetris/build/l_square.h:
-C\:/devkitPro/projects/tetris/build/s_square.h:
-C\:/devkitPro/projects/tetris/build/z_square.h:
-C\:/devkitPro/projects/tetris/build/t_square.h:
+C\:/devkitPro/Projects/Tetris/include/Square.h:
+C\:/devkitPro/Projects/Tetris/build/i_square.h:
+C\:/devkitPro/Projects/Tetris/build/o_square.h:
+C\:/devkitPro/Projects/Tetris/build/j_square.h:
+C\:/devkitPro/Projects/Tetris/build/l_square.h:
+C\:/devkitPro/Projects/Tetris/build/s_square.h:
+C\:/devkitPro/Projects/Tetris/build/z_square.h:
+C\:/devkitPro/Projects/Tetris/build/t_square.h:

@@ -3,8 +3,10 @@
 #include <nds/timers.h>
 #include <nds/system.h>
 
+#define INITIAL_WAITING_TICKS 20000
+
 bool GameSystem::waiting_tim_0 = false;
-u16 GameSystem::waiting_ticks_0 = 20000;
+u16 GameSystem::waiting_ticks_0 = INITIAL_WAITING_TICKS;
 
 GameSystem::GameSystem()
 {
@@ -76,7 +78,7 @@ void GameSystem::run()
 				oamUpdate(&oamSub);
 				oamUpdate(&oamMain);
 			}
-			board_->fall_cur_tile();
+			board_->move_down_cur_tile();
 			if (!(board_->alive))
 			{
 				deinit_board();
@@ -103,6 +105,7 @@ void GameSystem::deinit_menu()
 void GameSystem::init_board()
 {
 	board_ = new Board();
+	waiting_ticks_0 = INITIAL_WAITING_TICKS;
 }
 
 void GameSystem::deinit_board()
@@ -113,7 +116,8 @@ void GameSystem::deinit_board()
 void GameSystem::timer_callback()
 {
 	waiting_tim_0 = false;
-	if (waiting_ticks_0 > 5000) {
+	if (waiting_ticks_0 > 5000)
+	{
 		waiting_ticks_0 -= 100;
 	}
 }

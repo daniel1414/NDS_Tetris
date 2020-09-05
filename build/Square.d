@@ -1,5 +1,5 @@
-Square.o: C\:/devkitPro/projects/tetris/source/Square.cpp \
- C\:/devkitPro/projects/tetris/include/Square.h \
+Square.o: C\:/devkitPro/Projects/Tetris/source/Square.cpp \
+ C\:/devkitPro/Projects/Tetris/include/Square.h \
  C\:/devkitPro/libnds/include/nds.h \
  C\:/devkitPro/libnds/include/nds/libversion.h \
  C\:/devkitPro/libnds/include/nds/ndstypes.h \
@@ -60,7 +60,7 @@ Square.o: C\:/devkitPro/projects/tetris/source/Square.cpp \
  C\:/devkitPro/libnds/include/nds/arm9/video.h \
  C\:/devkitPro/libnds/include/nds/arm9/videoGL.h \
  C\:/devkitPro/libnds/include/nds/arm9/nand.h
-C\:/devkitPro/projects/tetris/include/Square.h:
+C\:/devkitPro/Projects/Tetris/include/Square.h:
 C\:/devkitPro/libnds/include/nds.h:
 C\:/devkitPro/libnds/include/nds/libversion.h:
 C\:/devkitPro/libnds/include/nds/ndstypes.h:

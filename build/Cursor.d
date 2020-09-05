@@ -1,5 +1,5 @@
-Cursor.o: C\:/devkitPro/projects/tetris/source/Cursor.cpp \
- C\:/devkitPro/projects/tetris/include/Cursor.h \
+Cursor.o: C\:/devkitPro/Projects/Tetris/source/Cursor.cpp \
+ C\:/devkitPro/Projects/Tetris/include/Cursor.h \
  C\:/devkitPro/libnds/include/nds.h \
  C\:/devkitPro/libnds/include/nds/libversion.h \
  C\:/devkitPro/libnds/include/nds/ndstypes.h \
@@ -60,8 +60,8 @@ Cursor.o: C\:/devkitPro/projects/tetris/source/Cursor.cpp \
  C\:/devkitPro/libnds/include/nds/arm9/video.h \
  C\:/devkitPro/libnds/include/nds/arm9/videoGL.h \
  C\:/devkitPro/libnds/include/nds/arm9/nand.h \
- C\:/devkitPro/projects/tetris/build/menu_cursor.h
-C\:/devkitPro/projects/tetris/include/Cursor.h:
+ C\:/devkitPro/Projects/Tetris/build/menu_cursor.h
+C\:/devkitPro/Projects/Tetris/include/Cursor.h:
 C\:/devkitPro/libnds/include/nds.h:
 C\:/devkitPro/libnds/include/nds/libversion.h:
 C\:/devkitPro/libnds/include/nds/ndstypes.h:
@@ -122,4 +122,4 @@ C\:/devkitPro/libnds/include/nds/arm9/trig_lut.h:
 C\:/devkitPro/libnds/include/nds/arm9/video.h:
 C\:/devkitPro/libnds/include/nds/arm9/videoGL.h:
 C\:/devkitPro/libnds/include/nds/arm9/nand.h:
-C\:/devkitPro/projects/tetris/build/menu_cursor.h:
+C\:/devkitPro/Projects/Tetris/build/menu_cursor.h:

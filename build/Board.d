@@ -1,5 +1,6 @@
-Board.o: C\:/devkitPro/projects/tetris/source/Board.cpp \
- C\:/devkitPro/projects/tetris/include/Board.h \
+Board.o: C\:/devkitPro/Projects/Tetris/source/Board.cpp \
+ C\:/devkitPro/Projects/Tetris/include/Board.h \
+ C\:/devkitPro/Projects/Tetris/include/TetrisTile.h \
  C\:/devkitPro/libnds/include/nds.h \
  C\:/devkitPro/libnds/include/nds/libversion.h \
  C\:/devkitPro/libnds/include/nds/ndstypes.h \
@@ -60,10 +61,11 @@ Board.o: C\:/devkitPro/projects/tetris/source/Board.cpp \
  C\:/devkitPro/libnds/include/nds/arm9/video.h \
  C\:/devkitPro/libnds/include/nds/arm9/videoGL.h \
  C\:/devkitPro/libnds/include/nds/arm9/nand.h \
- C\:/devkitPro/projects/tetris/include/TetrisTile.h \
- C\:/devkitPro/projects/tetris/include/Square.h \
- C\:/devkitPro/projects/tetris/build/board_bg.h
-C\:/devkitPro/projects/tetris/include/Board.h:
+ C\:/devkitPro/Projects/Tetris/include/Square.h \
+ C\:/devkitPro/Projects/Tetris/build/board_bg_up.h \
+ C\:/devkitPro/Projects/Tetris/build/board_bg_down.h
+C\:/devkitPro/Projects/Tetris/include/Board.h:
+C\:/devkitPro/Projects/Tetris/include/TetrisTile.h:
 C\:/devkitPro/libnds/include/nds.h:
 C\:/devkitPro/libnds/include/nds/libversion.h:
 C\:/devkitPro/libnds/include/nds/ndstypes.h:
@@ -124,6 +126,6 @@ C\:/devkitPro/libnds/include/nds/arm9/trig_lut.h:
 C\:/devkitPro/libnds/include/nds/arm9/video.h:
 C\:/devkitPro/libnds/include/nds/arm9/videoGL.h:
 C\:/devkitPro/libnds/include/nds/arm9/nand.h:
-C\:/devkitPro/projects/tetris/include/TetrisTile.h:
-C\:/devkitPro/projects/tetris/include/Square.h:
-C\:/devkitPro/projects/tetris/build/board_bg.h:
+C\:/devkitPro/Projects/Tetris/include/Square.h:
+C\:/devkitPro/Projects/Tetris/build/board_bg_up.h:
+C\:/devkitPro/Projects/Tetris/build/board_bg_down.h:
