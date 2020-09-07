@@ -9,16 +9,24 @@
 #include <memory>
 #include <random>
 
+<<<<<<< HEAD
 #define BOARD_WIDTH				10
 #define BOARD_HEIGHT			24
+=======
+#define BOARD_WIDTH				(10)
+#define BOARD_HEIGHT			(24)
+>>>>>>> e06a780ce89af7d1da6ec8d3525394b20c772565
 #define BOARD_WIDTH_PX			(BOARD_WIDTH * SQUARE_SIZE)
 #define BOARD_HEIGHT_PX			(BOARD_HEIGHT * SQUARE_SIZE)
 #define BOARD_BORDER_LEFT_PX	(1 * SQUARE_SIZE)
 #define BOARD_BORDER_RIGHT_PX	(BOARD_BORDER_LEFT_PX + BOARD_WIDTH_PX)
+<<<<<<< HEAD
 #define BOARD_NEW_TILE_RECT_PX 	192
 #define BOARD_NEW_TILE_RECT_PY 	16
 #define BOARD_SCORE_RECT_PX		192
 #define BOARD_SCORE_RECT_PY		272
+=======
+>>>>>>> e06a780ce89af7d1da6ec8d3525394b20c772565
 
 class Board {
 public:

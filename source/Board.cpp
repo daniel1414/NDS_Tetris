@@ -242,6 +242,7 @@ u8 Board::erase_rows_if_needed()
 void Board::new_future_tile()
 {
 	TILE_TYPE new_tile_type;
+<<<<<<< HEAD
 	u16 new_x = BOARD_NEW_TILE_RECT_PX;
 	u16 new_y = BOARD_NEW_TILE_RECT_PY;
 	switch (dist_tile(mt)) {
@@ -284,6 +285,50 @@ void Board::new_future_tile()
 		new_tile_type = TILE_TYPE::TILE_I;
 		new_x = BOARD_NEW_TILE_RECT_PX;
 		new_y = BOARD_NEW_TILE_RECT_PY;
+=======
+	u16 new_x = 0;
+	u16 new_y = 0;
+	switch (dist_tile(mt)) {
+	case 0:
+		new_tile_type = TILE_TYPE::TILE_I;
+		new_x = 192;
+		new_y = 16;
+		break;
+	case 1:
+		new_tile_type = TILE_TYPE::TILE_J;
+		new_x = 192 + 8;
+		new_y = 16 + 8;
+		break;
+	case 2:
+		new_tile_type = TILE_TYPE::TILE_L;
+		new_x = 192 - 8;
+		new_y = 16 + 8;
+		break;
+	case 3:
+		new_tile_type = TILE_TYPE::TILE_O;
+		new_x = 192 - 8;
+		new_y = 16;
+		break;
+	case 4:
+		new_tile_type = TILE_TYPE::TILE_S;
+		new_x = 192;
+		new_y = 16;
+		break;
+	case 5:
+		new_tile_type = TILE_TYPE::TILE_T;
+		new_x = 192;
+		new_y = 16;
+		break;
+	case 6:
+		new_tile_type = TILE_TYPE::TILE_Z;
+		new_x = 192;
+		new_y = 16;
+		break;
+	default:
+		new_tile_type = TILE_TYPE::TILE_I;
+		new_x = 192;
+		new_y = 16;
+>>>>>>> e06a780ce89af7d1da6ec8d3525394b20c772565
 		break;
 	}
 	future_tile_ = std::make_unique<TetrisTile>(new_x, new_y, new_tile_type);
