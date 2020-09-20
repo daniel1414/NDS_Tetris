@@ -65,7 +65,8 @@ GameSystem.o: C\:/devkitPro/Projects/Tetris/source/GameSystem.cpp \
  C\:/devkitPro/Projects/Tetris/include/Square.h \
  C\:/devkitPro/Projects/Tetris/include/Menu.h \
  C\:/devkitPro/Projects/Tetris/include/Cursor.h \
- C\:/devkitPro/libnds/include/nds/timers.h
+ C\:/devkitPro/libnds/include/nds/timers.h \
+ C\:/devkitPro/libnds/include/nds/arm9/input.h
 C\:/devkitPro/Projects/Tetris/include/GameSystem.h:
 C\:/devkitPro/Projects/Tetris/include/Board.h:
 C\:/devkitPro/Projects/Tetris/include/TetrisTile.h:
@@ -133,3 +134,4 @@ C\:/devkitPro/Projects/Tetris/include/Square.h:
 C\:/devkitPro/Projects/Tetris/include/Menu.h:
 C\:/devkitPro/Projects/Tetris/include/Cursor.h:
 C\:/devkitPro/libnds/include/nds/timers.h:
+C\:/devkitPro/libnds/include/nds/arm9/input.h:

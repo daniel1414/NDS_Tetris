@@ -62,6 +62,10 @@ Board.o: C\:/devkitPro/Projects/Tetris/source/Board.cpp \
  C\:/devkitPro/libnds/include/nds/arm9/videoGL.h \
  C\:/devkitPro/libnds/include/nds/arm9/nand.h \
  C\:/devkitPro/Projects/Tetris/include/Square.h \
+ C\:/devkitPro/Projects/Tetris/include/Timer.h \
+ C\:/devkitPro/libnds/include/nds/timers.h \
+ C\:/devkitPro/Projects/Tetris/include/log.h \
+ C\:/devkitPro/libnds/include/nds/debug.h \
  C\:/devkitPro/Projects/Tetris/build/board_bg_up.h \
  C\:/devkitPro/Projects/Tetris/build/board_bg_down.h
 C\:/devkitPro/Projects/Tetris/include/Board.h:
@@ -127,5 +131,9 @@ C\:/devkitPro/libnds/include/nds/arm9/video.h:
 C\:/devkitPro/libnds/include/nds/arm9/videoGL.h:
 C\:/devkitPro/libnds/include/nds/arm9/nand.h:
 C\:/devkitPro/Projects/Tetris/include/Square.h:
+C\:/devkitPro/Projects/Tetris/include/Timer.h:
+C\:/devkitPro/libnds/include/nds/timers.h:
+C\:/devkitPro/Projects/Tetris/include/log.h:
+C\:/devkitPro/libnds/include/nds/debug.h:
 C\:/devkitPro/Projects/Tetris/build/board_bg_up.h:
 C\:/devkitPro/Projects/Tetris/build/board_bg_down.h:

@@ -2,6 +2,7 @@
 #include <nds/arm9/sprite.h>
 #include <nds/timers.h>
 #include <nds/system.h>
+#include <nds/arm9/input.h>
 
 #define INITIAL_WAITING_TICKS 20000
 
@@ -27,6 +28,7 @@ void GameSystem::hardware_init()
 	oamInit(&oamSub, SpriteMapping_1D_128, false);
 	lcdMainOnBottom();
 	timerStart(0, ClockDivider_1024, 65535 - waiting_ticks_0, timer_callback);
+	TIMER_CR(3) = TIMER_ENABLE | TIMER_DIV_1024;
 }
 
 void GameSystem::run()

@@ -4,6 +4,8 @@
 #include <algorithm>
 #include <map>
 
+#include "Timer.h"
+
 #include "board_bg_up.h"
 #include "board_bg_down.h"
 
@@ -59,6 +61,7 @@ void Board::process_input(int keys_down, int keys_held)
 
 void Board::move_down_cur_tile()
 {
+	Timer timer(__func__);
 	if (!can_move_down()) {
 		tetris_tiles_.back()->stop();
 		erase_rows_if_needed();
@@ -72,6 +75,7 @@ void Board::move_down_cur_tile()
 /* private functions */
 bool Board::can_move_down() const
 {
+	Timer t(__func__);
 	bool can_move_down = true;
 	tetris_tiles_.back()->move_down(SQUARE_SIZE);
 	/* ckeck if tiles are below */
@@ -99,6 +103,7 @@ bool Board::can_move_down() const
 
 bool Board::can_rotate(bool right) const
 {
+	Timer t(__func__);
 	bool can_rotate = true;
 	/* rotate and check, if there are two blocks in the same position in that area */
 	tetris_tiles_.back()->rotate(right);
@@ -129,6 +134,7 @@ bool Board::can_rotate(bool right) const
 }
 bool Board::can_move(bool right) const
 {
+	Timer t(__func__);
 	/* logid similar to can_rotate() */
 	bool can_move = true;
 	tetris_tiles_.back()->move_to_side(right, SQUARE_SIZE);
@@ -185,6 +191,7 @@ bool Board::check_overlap() const
 }
 u8 Board::erase_rows_if_needed()
 {
+	Timer t(__func__);
 	/* iterate through tiles and check if there are 10 squares in a row.
 		if yes, erase that row and move all squares above one position down.
 		return the nuber of erased rows. */
@@ -241,8 +248,8 @@ u8 Board::erase_rows_if_needed()
 
 void Board::new_future_tile()
 {
+	
 	TILE_TYPE new_tile_type;
-<<<<<<< HEAD
 	u16 new_x = BOARD_NEW_TILE_RECT_PX;
 	u16 new_y = BOARD_NEW_TILE_RECT_PY;
 	switch (dist_tile(mt)) {
@@ -285,57 +292,15 @@ void Board::new_future_tile()
 		new_tile_type = TILE_TYPE::TILE_I;
 		new_x = BOARD_NEW_TILE_RECT_PX;
 		new_y = BOARD_NEW_TILE_RECT_PY;
-=======
-	u16 new_x = 0;
-	u16 new_y = 0;
-	switch (dist_tile(mt)) {
-	case 0:
-		new_tile_type = TILE_TYPE::TILE_I;
-		new_x = 192;
-		new_y = 16;
-		break;
-	case 1:
-		new_tile_type = TILE_TYPE::TILE_J;
-		new_x = 192 + 8;
-		new_y = 16 + 8;
-		break;
-	case 2:
-		new_tile_type = TILE_TYPE::TILE_L;
-		new_x = 192 - 8;
-		new_y = 16 + 8;
-		break;
-	case 3:
-		new_tile_type = TILE_TYPE::TILE_O;
-		new_x = 192 - 8;
-		new_y = 16;
-		break;
-	case 4:
-		new_tile_type = TILE_TYPE::TILE_S;
-		new_x = 192;
-		new_y = 16;
-		break;
-	case 5:
-		new_tile_type = TILE_TYPE::TILE_T;
-		new_x = 192;
-		new_y = 16;
-		break;
-	case 6:
-		new_tile_type = TILE_TYPE::TILE_Z;
-		new_x = 192;
-		new_y = 16;
-		break;
-	default:
-		new_tile_type = TILE_TYPE::TILE_I;
-		new_x = 192;
-		new_y = 16;
->>>>>>> e06a780ce89af7d1da6ec8d3525394b20c772565
 		break;
 	}
+	Timer t(__func__);
 	future_tile_ = std::make_unique<TetrisTile>(new_x, new_y, new_tile_type);
 }
 
 void Board::new_tile()
 {
+	Timer t(__func__);
 	future_tile_->move(BOARD_BORDER_LEFT_PX + 3 * SQUARE_SIZE, 0);
 	tetris_tiles_.push_back(std::move(future_tile_));
 	new_future_tile();
