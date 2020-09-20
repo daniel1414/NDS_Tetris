@@ -49,6 +49,7 @@ private:
 	int bg_sub_;
 	std::unique_ptr<TetrisTile> future_tile_;
 	std::vector<std::shared_ptr<TetrisTile>> tetris_tiles_;
+	u8 busy_positions[BOARD_WIDTH * BOARD_HEIGHT];
 };
 
 #endif /* _BOARD_H_ */

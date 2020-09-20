@@ -94,9 +94,11 @@ bool Board::can_move_down() const
 			can_move_down = false;
 		}
 	}
+
 	if (!can_move_down) {
 		tetris_tiles_.back()->move_up(SQUARE_SIZE);
 	}
+	
 	tetris_tiles_.back()->update();
 	return can_move_down;
 }
@@ -164,7 +166,7 @@ bool Board::can_move(bool right) const
 	return can_move;
 }
 
-/* checks overlap with the last tile and all previous tiles */
+/* checks overlap between the last tile and all previous tiles */
 bool Board::check_overlap() const
 {
 	std::vector<std::pair<u16, u16>> new_positions;
@@ -248,7 +250,6 @@ u8 Board::erase_rows_if_needed()
 
 void Board::new_future_tile()
 {
-	
 	TILE_TYPE new_tile_type;
 	u16 new_x = BOARD_NEW_TILE_RECT_PX;
 	u16 new_y = BOARD_NEW_TILE_RECT_PY;
@@ -303,6 +304,18 @@ void Board::new_tile()
 	Timer t(__func__);
 	future_tile_->move(BOARD_BORDER_LEFT_PX + 3 * SQUARE_SIZE, 0);
 	tetris_tiles_.push_back(std::move(future_tile_));
+	std::vector<std::pair<u16, u16>> square_positions;
+	tetris_tiles_.back()->get_square_positions(square_positions);
+	for(auto& s : square_positions)
+	{
+		u16 x = (s.first - BOARD_BORDER_LEFT_PX) / SQUARE_SIZE;
+		u16 y = s.second / SQUARE_SIZE;
+		busy_positions[y * BOARD_WIDTH + x]++;
+	}
+	for(int i = 0; i < 60; i++)
+	{
+		LOG("pos: %d, value: %d", i, busy_positions[i]);
+	}
 	new_future_tile();
 	update();
 }

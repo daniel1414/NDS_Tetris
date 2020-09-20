@@ -9,6 +9,8 @@
 class Square {
 public:
 	Square(u16 px, u16 py, const unsigned int* tiles_ptr, const u32 tiles_len, const unsigned short* pal_ptr, const u32 pal_len, const u8 pal_offset);
+	Square(const Square&) = delete;
+	Square& operator=(const Square&) = delete;
 	~Square();
 	
 	void move(u16 px, u16 py);
